@@ -19,7 +19,7 @@ export class SearchFormComponent implements OnInit {
     public books: BookInterface[];
     public titles: BookInterface[];
     public done: boolean = false;
-    private debounce: number = 400;
+    public debounce: number = 400;
 
     constructor(private searchBook: SearchBookService) {
         this.searchForm = new FormGroup({
